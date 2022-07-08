@@ -29,7 +29,7 @@ const Home = ({ recipes }) => (
       <div className='p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
         {/* Cards go here */}
         {recipes.map(recipe => (
-          <RecipeCard key={recipe.sys.id} recipe={recipe} className='max-w-sm rounded overflow-hidden shadow-lg text-center sm:m-auto' />
+          <RecipeCard key={recipe.sys.id} recipe={recipe} />
         ))}
       </div>
     </main>
