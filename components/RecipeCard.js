@@ -5,7 +5,7 @@ export default function RecipeCard({ recipe }) {
     const { title, slug, cookingTime, thumbnail } = recipe.fields
 
     return (
-        <div className='max-w-sm rounded overflow-hidden shadow-lg text-center sm:m-auto'>
+        <div className='bg-white max-w-sm rounded overflow-hidden shadow-lg text-center sm:m-auto'>
             <div>
                 <Image src={'https:' + thumbnail.fields.file.url}
                     width={thumbnail.fields.file.details.image.width}

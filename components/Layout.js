@@ -12,7 +12,7 @@ export default function Layout({ children }) {
                     </div>
                     <ul className='flex justify-center text-white items-center m-auto font-semibold'>
                         <li className='px-6 '>
-                            <a href="#" className='hover:text-yellow-400'>Home</a>
+                            <a href="/" className='hover:text-yellow-400'>Home</a>
                         </li>
                         <li className='px-6 '>
                             <a href="#" className='hover:text-yellow-400'>About</a>
@@ -22,7 +22,7 @@ export default function Layout({ children }) {
                         </li>
                     </ul>
                 </nav>
-                <div className='text-center p-8'>
+                <div className='text-center p-8 bg-gray-300'>
                     <Link href='/'>
                         <a>
                             <h1>
@@ -38,8 +38,8 @@ export default function Layout({ children }) {
             <div>
                 {children}
             </div>
-            <footer className="flex h-24 w-full self-center justify-center border-t">
-                <p>Copyright @ 2021</p>
+            <footer className="bg-gray-300 flex h-24 w-full self-center justify-center border-t">
+                <p className='pt-6'>Copyright @ 2021</p>
             </footer>
         </div>
     )

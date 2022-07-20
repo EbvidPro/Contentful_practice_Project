@@ -18,7 +18,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({ recipes }) => (
-  <div>
+  <div className='text-center p-4 bg-gray-300'>
     {console.log({ recipes })}
     <Head>
       <title>Marmite Blog</title>

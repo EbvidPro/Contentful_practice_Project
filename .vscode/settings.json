@@ -1,3 +1,4 @@
 {
-    "git.allowForcePush": false
+    "git.allowForcePush": false,
+    "html.autoClosingTags": true
 }
