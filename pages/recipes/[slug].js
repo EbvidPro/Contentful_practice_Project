@@ -38,7 +38,7 @@ export async function getStaticProps({ params }) {
 export default function RecipeDetails({ recipe }) {
     const { featuredImage, title, cookingTime, ingredients, method } = recipe.fields
     return (
-        <div className='text-center p-4 bg-gray-300'>
+        <div className='text-center xl:px-40 md:px-20 sm:px-4 p-4 bg-gray-300'>
             <div className='text-center'>
                 <Image src={'https:' + featuredImage.fields.file.url}
                     width={300}
