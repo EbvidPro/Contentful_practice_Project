@@ -10,7 +10,7 @@ export default function Layout({ children }) {
                             <a href="/">Marmite</a>
                         </h1>
                     </div>
-                    <ul className='flex justify-center text-white items-center m-auto font-semibold'>
+                    <ul className='flex justify-center text-white items-center m-auto font-semibold sm:hidden'>
                         <li className='px-6 '>
                             <a href="/" className='hover:text-yellow-400'>Home</a>
                         </li>

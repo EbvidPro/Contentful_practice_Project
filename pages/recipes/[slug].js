@@ -37,6 +37,7 @@ export async function getStaticProps({ params }) {
 
 export default function RecipeDetails({ recipe }) {
     const { featuredImage, title, cookingTime, ingredients, method } = recipe.fields
+    console.log(ingredients)
     return (
         <div className='text-center xl:px-40 md:px-20 sm:px-4 p-4 bg-gray-300'>
             <div className='text-center'>
@@ -49,7 +50,7 @@ export default function RecipeDetails({ recipe }) {
                 <p className='italic'>Takes about {cookingTime} mins to cook.</p>
                 <h3 className='text-left text-xl font-bold pt-6'>Ingredients:</h3>
                 {ingredients.map(ing => {
-                    <span key={ing}>{ing}</span>
+                    <li key={ing}>{documentToReactComponents(ing)}</li>
                 })}
             </div>
             <div>
