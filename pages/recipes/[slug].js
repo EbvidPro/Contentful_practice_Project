@@ -51,7 +51,7 @@ export default function RecipeDetails({ recipe }) {
                 <p className='italic'>Takes about {cookingTime} mins to cook.</p>
                 <h3 className='text-left text-xl font-bold pt-6'>Ingredients:</h3>
                 {ingredients.map(ing => {
-                    <li key={ing}>{documentToReactComponents(ing)}</li>
+                    <li key={ing}>{ing}</li>
                 })}
             </div>
             <div>
