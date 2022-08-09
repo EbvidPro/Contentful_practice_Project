@@ -50,9 +50,9 @@ export default function RecipeDetails({ recipe }) {
             <div>
                 <p className='italic'>Takes about {cookingTime} mins to cook.</p>
                 <h3 className='text-left text-xl font-bold pt-6'>Ingredients:</h3>
-                {ingredients.map(ing => {
-                    <li key={ing}>{ing}</li>
-                })}
+                {ingredients.map(ing => (
+                    <li className='text-left' key={ing}>{ing}</li>
+                ))}
             </div>
             <div>
                 <h3 className='text-left text-xl font-bold pt-6'>Method:</h3>
